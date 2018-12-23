@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Friend Finder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="text-center">Friend Finder</h1>
+            <hr>
+            <h2 class="text-center">Please complete the survey</h2>
+            <br>
+
+            <div class="text-center">
+                <a href="/"><button class="btn btn-lg btn-primary">
+                        <span class="fa fa-home"></span>
+                    </button></a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header">
+                        Personality Survey
+                    </div>
+                    <div class="card-body">
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="friend-name">
+                                    <h4>Name</h4>
+                                </label>
+                                <input type="text" class="form-control" id="friend-name">
+                            </div>
+                            <br>
+
+                            <div class="form-group">
+                                <label for="friend-pic">
+                                    <h4>Link to photo</h4>
+                                </label>
+                                <input type="text" class="form-control" id="friend-pic">
+                            </div>
+                            <br>
+
+                            <div class="form-group">
+                                <label for="friend-name">
+                                    <h4>Question One</h4>
+                                </label>
+                                <h5>I make friends easily.</h5>
+                                <select class="chosen-select" id="q1">
+                                    <option value=""></option>
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                            </div>
+                            <br>
+
+                            <div class="form-group">
+                                <label for="friend-name">
+                                    <h4>Question Two</h4>
+                                </label>
+                                <h5>I experience my emotions intensely.</h5>
+                                <select class="chosen-select" id="q2">
+                                    <option value=""></option>
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                            </div>
+                            <br>
+
+                            <div class="form-group">
+                                <label for="friend-name">
+                                    <h4>Question Three</h4>
+                                </label>
+                                <h5>I prefer variety to routine.</h5>
+                                <select class="chosen-select" id="q3">
+                                    <option value=""></option>
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                            </div>
+                            <br>
+
+                            <div class="form-group">
+                                <label for="friend-name">
+                                    <h4>Question Four</h4>
+                                </label>
+                                <h5>I panic easily.</h5>
+                                <select class="chosen-select" id="q4">
+                                    <option value=""></option>
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                            </div>
+                            <br>
+
+                            <div class="form-group">
+                                <label for="friend-name">
+                                    <h4>Question Five</h4>
+                                </label>
+                                <h5>I dislike being the center of attention.</h5>
+                                <select class="chosen-select" id="q5">
+                                    <option value=""></option>
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                            </div>
+                            <br>
+
+                            <div class="form-group">
+                                <label for="friend-name">
+                                    <h4>Question Six</h4>
+                                </label>
+                                <h5>I get chores done right away.</h5>
+                                <select class="chosen-select" id="q6">
+                                    <option value=""></option>
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                            </div>
+                            <br>
+
+                            <div class="form-group">
+                                <label for="friend-name">
+                                    <h4>Question Seven</h4>
+                                </label>
+                                <h5>I am afraid that I will do the wrong thing.</h5>
+                                <select class="chosen-select" id="q7">
+                                    <option value=""></option>
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                            </div>
+                            <br>
+
+                            <div class="form-group">
+                                <label for="friend-name">
+                                    <h4>Question Eight</h4>
+                                </label>
+                                <h5>I talk to a lot of different people at parties.</h5>
+                                <select class="chosen-select" id="q8">
+                                    <option value=""></option>
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                            </div>
+                            <br>
+
+                            <div class="form-group">
+                                <label for="friend-name">
+                                    <h4>Question Nine</h4>
+                                </label>
+                                <h5>I love to read challenging material.</h5>
+                                <select class="chosen-select" id="q9">
+                                    <option value=""></option>
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                            </div>
+                            <br>
+
+                            <div class="form-group">
+                                <label for="friend-name">
+                                    <h4>Question Ten</h4>
+                                </label>
+                                <h5>I anticipate the needs of others.</h5>
+                                <select class="chosen-select" id="q10">
+                                    <option value=""></option>
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                            </div>
+                            <br>
+
+                            <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">
+                                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                                Submit
+                            </button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <footer class="footer">
+            <div class="container">
+                <p><a href="/api/friends">API Friend List</a></p>
+            </div>
+        </footer>
+    </div>
+
+    <div id="results-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                    <h2 class="modal-title"><strong>Best Match</strong></h2>
+                </div>
+                <div class="modal-body">
+                    <h2 id="match-name"></h2>
+                    <img id="match-img" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg"
+                        alt="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $("#submit").on("click", function (event) {
+            event.preventDefault();
+
+            function validate() {
+                var isValid = true;
+                $(".form-control").each(function () {
+                    console.log($(this).val());
+                    if ($(this).val() === "") {
+                        isValid = false;
+                    }
+                });
+
+                $(".chosen-select").each(function () {
+                    console.log($(this).val());
+                    if ($(this).val() === "") {
+                        isValid = false;
+                    }
+                });
+                return isValid;
+            };
+
+            if (validate()) {
+                var userData = {
+                    name: $("#friend-name").val(),
+                    photo: $("#friend-pic").val(),
+                    scores: [
+                        $("#q1").val(),
+                        $("#q2").val(),
+                        $("#q3").val(),
+                        $("#q4").val(),
+                        $("#q5").val(),
+                        $("#q6").val(),
+                        $("#q7").val(),
+                        $("#q8").val(),
+                        $("#q9").val(),
+                        $("#q10").val()
+                    ]
+                };
+
+                $.post("/api/friends", userData, function (data) {
+                    alert("data added");
+                    $("#match-name").text(data.name);
+                    $("#match-img").attr("src", data.photo);
+
+                    // Show the modal with the best match
+                    $("#results-modal").modal("toggle");
+                });
+            } else {
+                alert("Please completely fill out entire survey before submitting.");
+            };
+        })
+    </script>
+</body>
+
+</html>
